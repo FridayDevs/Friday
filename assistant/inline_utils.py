@@ -1,10 +1,4 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+
 
 import string
 from pyrogram.types import InputMediaDocument
@@ -182,7 +176,7 @@ async def owo(client, inline_query):
                 [InlineKeyboardButton(text="Xtra Command Help", callback_data=f"make_basic_button_False")],
                 [InlineKeyboardButton(text="Main Command Help", callback_data=f"make_basic_button_True")]
             ]
-        nice_text = f"**FridayUserBot Commands** \n**Friday Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{len(CMD_LIST)}__"
+        nice_text = f"**DaisyXUserBot Commands** \n**DaisyX Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{len(CMD_LIST)}__"
         await client.answer_inline_query(
             inline_query.id,
             cache_time=0,
@@ -194,7 +188,7 @@ async def owo(client, inline_query):
                         input_message_content=InputTextMessageContent(nice_text),
                     )
                 )
-            ],
+            ], 
         )
 
 
@@ -275,7 +269,7 @@ async def get_back_vro(client, cb):
         is_official = False
     cmd_list = CMD_LIST if is_official else XTRA_CMD_LIST
     buttons = paginate_help(page_number, cmd_list, "helpme", is_official=is_official)
-    nice_text = f"**FridayUserBot Commands & Help Menu!** \n\n**Friday Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{len(CMD_LIST)}__"
+    nice_text = f"**DaisyXUserBot Commands & Help Menu!** \n\n**DaisyX Version :** __{friday_version}__ \n**PyroGram Version :** __{__version__}__ \n**Total Plugins Loaded :** __{len(CMD_LIST)}__"
     await cb.edit_message_text(nice_text, reply_markup=InlineKeyboardMarkup(buttons))
 
 
@@ -288,7 +282,7 @@ async def give_plugin_cmds(client, cb):
         is_official = False
     cmd_list = CMD_LIST if is_official else XTRA_CMD_LIST
     help_string = f"**💡 PLUGIN NAME 💡 :** `{plugin_name}` \n{cmd_list[plugin_name]}"
-    help_string += "\n\n**(C) @FRIDAYOT** ".format(plugin_name)
+    help_string += "\n\n**(C) @DAISYXOT** ".format(plugin_name)
     await cb.edit_message_text(
         help_string,
         reply_markup=InlineKeyboardMarkup(
