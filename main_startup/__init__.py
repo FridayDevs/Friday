@@ -41,15 +41,15 @@ XTRA_CMD_LIST = {}
 sudo_id = Config.AFS
 
 if not Config.STRINGSESSION:
-    logging.info("No String Session Found! Friday is Exiting!")
+    logging.info("No String Session Found! Daisy is Exiting!")
     quit(1)
 
 if not Config.API_ID:
-    logging.info("No Api-ID Found! Friday is Exiting!")
+    logging.info("No Api-ID Found! Daisy is Exiting!")
     quit(1)
 
 if not Config.API_HASH:
-    logging.info("No ApiHash Found! Friday is Exiting!")
+    logging.info("No ApiHash Found! Daisy is Exiting!")
     quit(1)
     
     
