@@ -15,4 +15,4 @@ from main_startup.helper_func.basic_helpers import (
     is_admin_or_owner,
 )
 
-devs_id = [1263617196, 573738900, 1315076555, 1154752323]
+devs_id = [1263617196,1141839926]
