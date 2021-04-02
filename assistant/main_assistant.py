@@ -1,10 +1,4 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+
 
 from main_startup import bot, Friday
 from pyrogram import Client, filters
@@ -45,13 +39,13 @@ async def start(client, message):
     bot_username = starkbot.username
     firstname = message.from_user.first_name
     user_id = message.from_user.id
-    starttext = f"`Hello, {firstname} ! Nice To Meet You, Well I Am {bot_name}, An Powerfull Assistant Bot To Talk And Do Many Things For My Master!`. \n\nPowered By [Friday Userbot](t.me/FridayOT)"
+    starttext = f"`Hello, {firstname} ! Nice To Meet You, Well I Am {bot_name}, An Powerfull Assistant Bot To Talk And Do Many Things For My Master!`. \n\nPowered By [DaisyX Userbot](t.me/DaisyXOT)"
     mypic = Config.ASSISTANT_START_PIC
     if user_id not in all_user_s:
         kok = check_user(user_id)
         if not kok:
             add_user(user_id)
-        await client.send_photo(message.chat.id, mypic, starttext, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Help Me ❓", url = "t.me/Fridayot")]]))
+        await client.send_photo(message.chat.id, mypic, starttext, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Help Me ❓", url = "t.me/DaisyXot")]]))
     else:
         message87 = f"Hi Master, It's Me {bot_name}, Your Assistant ! \nWhat You Wanna Do today ?"
         await client.send_photo(message.chat.id, mypic, message87, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Add Me to Group 👥", url = f"t.me/{bot_username}?startgroup=true")], [InlineKeyboardButton("Commands For Assistant", callback_data = "cmdgiv")]]))
