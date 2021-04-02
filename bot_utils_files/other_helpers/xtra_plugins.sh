@@ -1,6 +1,6 @@
 
 
-PLUGIN_REPO="https://github.com/DevsExpo/Xtra-Plugins.git"
+PLUGIN_REPO="https://github.com/DaisyDevs/XtraPlugins.git"
 xtra_fold="./xtraplugins"
 req_file="./xtraplugins/req.txt"
 
