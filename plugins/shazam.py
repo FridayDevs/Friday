@@ -56,7 +56,7 @@ async def shazamm(client, message):
 <b>Song Name : </b>{title}
 <b>Song By : </b>{by}
 
-<u><b>Identified Using Friday - Get Your Friday From</b></u>
+<u><b>Identified Using DaisyX - Get Your DaisyX From</b></u>
 """
     await client.send_photo(message.chat.id, image, messageo, parse_mode="HTML")
     await kek.delete()
