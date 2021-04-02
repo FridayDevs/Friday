@@ -51,7 +51,7 @@ async def pingy(client, message):
 )
 async def amialive(client, message):
     alive = f"""
-**Friday-UserBot is Alive!**
+**DaisyX Userbot is Alive!**
 
 ♦ **Version :** __{friday_version}__
 ♦ **Uptime :** __{get_readable_time((time.time() - start_time))}__
