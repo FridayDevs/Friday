@@ -1,10 +1,4 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+
 
 import inspect
 import os
@@ -86,7 +80,7 @@ def friday_on_cmd(
                     text += datetime_tz.strftime(
                         "**Date :** `%Y-%m-%d` \n**Time :** `%H:%M:%S`"
                     )
-                    text += "\n\n__You can Forward This to @FridayChat, If You Think This is Serious A Error!__"
+                    text += "\n\n__You can Forward This to @DaisyXOT, If You Think This is Serious A Error!__"
                     try:
                         await client.send_message(Config.LOG_GRP, text)
                     except Exception:
@@ -124,7 +118,7 @@ def listen(filter_s):
                 text += datetime_tz.strftime(
                         "**Date :** `%Y-%m-%d` \n**Time :** `%H:%M:%S`"
                     )
-                text += "\n\n__You can Forward This to @FridayChat, If You Think This is A Error!__"
+                text += "\n\n__You can Forward This to @DaisyXOT, If You Think This is A Error!__"
                 try:
                     await client.send_message(Config.LOG_GRP, text)
                 except Exception:
