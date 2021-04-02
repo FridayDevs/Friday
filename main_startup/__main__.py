@@ -80,10 +80,10 @@ async def run_bot():
             logging.error("[USER] - Failed To Load : " + f"{nm} - {str(e)}")
     if Config.LOAD_UNOFFICIAL_PLUGINS:
         await load_unofficial_modules()
-    full_info = f"""Friday Based On Pyrogram V{__version__}
+    full_info = f"""DaisyX Based On Pyrogram V{__version__}
 Python Version : {platform.python_version()}
-Friday Version : {friday_version}
-You Can Visit @FridaySupportOfficial For Updates And @FridayChat For Any Query / Help!
+DaisyX Version : {friday_version}
+You Can Visit @DaisyXOT For Updates And For Any Query / Help!
 """
     logging.info(full_info)
     await pyrogram.idle()
